@@ -2,11 +2,12 @@
 deployment:
   tasks:
     - export DEPLOYPART=/home/u5587213/public_html/sisolusi.id/MPH_traking/
-    - /bin/cp -R application $DEPLOYPART
-    - /bin/cp -R assets $DEPLOYPART
-    - /bin/cp -R system $DEPLOYPART
-    - /bin/cp -R tamplog $DEPLOYPART
-    - /bin/cp .htaccess $DEPLOYPART
-    - /bin/cp composer.json $DEPLOYPART
-    - /bin/cp index.php $DEPLOYPART
-    - /bin/cp user_database.txt $DEPLOYPART
+    # - /bin/cp -R application $DEPLOYPART
+    # - /bin/cp -R assets $DEPLOYPART
+    # - /bin/cp -R system $DEPLOYPART
+    # - /bin/cp -R templog $DEPLOYPART
+    # - /bin/cp .htaccess $DEPLOYPART
+    # - /bin/cp composer.json $DEPLOYPART
+    # - /bin/cp index.php $DEPLOYPART
+    # - /bin/cp user_database.txt $DEPLOYPART
+     - /bin/cp -R MPH_traking $DEPLOYPART
