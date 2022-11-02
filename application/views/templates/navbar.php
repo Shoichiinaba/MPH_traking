@@ -9,8 +9,7 @@
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button">
-                <i class="fas fa-th-large"></i>
+            <a class="nav-link" href="<?php echo base_url() ?>Auth/logout"><i class="material-icons" data-toggle="tooltip" data-placement="top" title="Logout"></i> <i class="fas fa-share"></i>
             </a>
         </li>
     </ul>

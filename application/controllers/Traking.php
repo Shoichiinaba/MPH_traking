@@ -1,14 +1,14 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class Traking extends CI_Controller
+class Traking extends AUTH_Controller
 {
 	var $template = 'templates/index';
 
 	function __construct()
 	{
 		parent::__construct();
-		$this->API = "https://sisolusi.id/MPH_traking/api/traking";
+		// $this->API = "https://sisolusi.id/MPH_traking/api/traking";
 		$this->load->model('M_traking');
 		$this->load->helper('url');
 	}
@@ -18,7 +18,7 @@ class Traking extends CI_Controller
 		$this->form_validation->set_rules('no_pengepakan', 'No_pengepakan', 'required|trim');
 
 		if ($this->form_validation->run() == false) {
-			$data['content']  = 'admin/add';
+			$data['content']  = 'admin/Add';
 			$this->load->view($this->template, $data);
 		} else {
 			$data = [

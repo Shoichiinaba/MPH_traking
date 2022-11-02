@@ -16,25 +16,9 @@
             </div>
         </div><!-- /.container-fluid -->
     </section>
-    <?php if ($this->session->flashdata('sukses')) : ?>
-        <script>
-            swal.fire({
-                title: 'Data Berhasil Di Proses!!',
-                text: "<?php echo $this->session->flashdata('berhasil'); ?>",
-                type: 'success'
-            });
-        </script>
-    <?php endif; ?>
+    <!-- Alert -->
 
-    <?php if ($this->session->flashdata('error')) : ?>
-        <script>
-            swal.fire({
-                title: 'Oops!!',
-                text: "<?php echo $this->session->flashdata('error'); ?>",
-                type: 'error'
-            });
-        </script>
-    <?php endif; ?>
+    <!-- Akhir Alert -->
 
     <!-- Main content -->
     <section>

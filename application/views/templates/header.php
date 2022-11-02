@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="<?= base_url(); ?>templog/img/logo.png" type="image/gif" sizes="25x12">
     <title> MPH Tracking| Dashboard</title>
 
     <!-- Google Font: Source Sans Pro -->

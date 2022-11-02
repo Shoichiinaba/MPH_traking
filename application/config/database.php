@@ -75,10 +75,16 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
+	// Local
+	// 'hostname' => 'localhost',
+	// 'username' => 'root',
+	// 'password' => '',
+	// 'database' => 'mph_rest',
+	// online
 	'hostname' => 'localhost',
-	'username' => 'root',
-	'password' => '',
-	'database' => 'mph_rest',
+	'username' => 'u5587213_mph_rest',
+	'password' => 'Semarang123!',
+	'database' => 'u5587213_mph_rest',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,

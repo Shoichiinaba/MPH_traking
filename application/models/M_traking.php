@@ -99,9 +99,8 @@ class M_traking extends CI_Model
 
 	function jml_krm()
 	{
-		$this->db->select('id,picking,packing,kirim, COUNT(kirim) as jum_kir');
-		$this->db->order_by('jum_kir', 'asc');
-		// $this->db->where('kirim = IS NOT NULL');
+		$this->db->select('kirim, COUNT(kirim) as jum_pck');
+		$this->db->order_by('jum_pck', 'asc');
 		$hasil = $this->db->get('traking_order');
 		return $hasil->num_rows();
 	}

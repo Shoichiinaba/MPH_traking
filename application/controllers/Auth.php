@@ -3,7 +3,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 class Auth extends CI_Controller
 {
-    var $template = 'templates/index';
+    // var $template = 'template/index';
 
     public function __construct()
     {
@@ -13,16 +13,13 @@ class Auth extends CI_Controller
 
     public function index()
     {
-        // $session = $this->session->userdata('status');
+        $session = $this->session->userdata('status');
 
-        // if ($session == '') {
-        //     $this->load->view('admin/dashboard');
-        // } else {
-        //     redirect('Dashboard');
-        // }
-
-        $data['content'] = 'admin/dashboard';
-        $this->load->view($this->template, $data);
+        if ($session == '') {
+            $this->load->view('admin/login');
+        } else {
+            redirect('Dashboard');
+        }
     }
 
     public function login()
@@ -37,7 +34,7 @@ class Auth extends CI_Controller
             $data = $this->M_auth->login($username, $password);
 
             if ($data == false) {
-                $this->session->set_flashdata('result_login', '<br>Username atau Password yang anda masukkan salah.');
+                $this->session->set_flashdata('result_login', '<br> <div style="background: #99ffff; padding: 5px 5px;"> <font color="red"> Username atau Password yang anda masukkan salah.</font></div>');
                 redirect('Auth');
             } else {
                 $session = [

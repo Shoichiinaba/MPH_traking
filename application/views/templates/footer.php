@@ -19,7 +19,6 @@
 <!-- PAGE PLUGINS -->
 <!-- jQuery -->
 <script src="<?= base_url('assets/'); ?>plugins/jquery/jquery.min.js"></script>
-
 <!-- Bootstrap -->
 <script src="<?= base_url('assets/'); ?>plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- overlayScrollbars -->
@@ -34,8 +33,7 @@
 <script src="<?= base_url('assets/'); ?>plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
 <script src="<?= base_url('assets/'); ?>plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
 <script src="<?= base_url('assets/'); ?>plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
-<script src="<?= base_url('assets/'); ?>plugins/datatables-buttons/js/buttons.html5.min.js"></script>
-<script src="<?= base_url('assets/'); ?>plugins/datatables-buttons/js/buttons.print.min.js"></script>
+<!-- s -->
 <script src="<?= base_url(); ?>assets/plugins/datatables-select/js/dataTables.select.min.js"></script>
 <script src="<?= base_url(); ?>assets/plugins/datatables-select/js/select.bootstrap4.min.js"></script>
 
