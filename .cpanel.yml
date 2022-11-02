@@ -6,6 +6,7 @@ deployment:
     - /bin/cp -R assets $DEPLOYPART
     - /bin/cp -R system $DEPLOYPART
     - /bin/cp -R templog $DEPLOYPART
+    - /bin/cp -R .editorconfig $DEPLOYPART
     - /bin/cp -R .htaccess $DEPLOYPART
     - /bin/cp -R composer.json $DEPLOYPART
     - /bin/cp -R index.php $DEPLOYPART
