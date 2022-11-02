@@ -6,10 +6,11 @@ deployment:
     - /bin/cp -R assets $DEPLOYPART
     - /bin/cp -R system $DEPLOYPART
     - /bin/cp -R templog $DEPLOYPART
+    - /bin/cp -R .cpanel.yml $DEPLOYPART
     - /bin/cp -R .editorconfig $DEPLOYPART
     - /bin/cp -R .gitignore $DEPLOYPART
     - /bin/cp -R .htaccess $DEPLOYPART
     - /bin/cp -R composer.json $DEPLOYPART
     - /bin/cp -R index.php $DEPLOYPART
-    - /bin/cp -R redme.rst $DEPLOYPART
+    - /bin/cp -R readme.rst $DEPLOYPART
     - /bin/cp -R user_database.txt $DEPLOYPART
